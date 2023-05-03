@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import PageObjectModel.LoginPage;
 import PageObjectModel.SignupPage;
 import RESOURCES.BaseCLASS;
+import RESOURCES.CommonMethods;
 
 public class VerifySignUp extends BaseCLASS {
 
@@ -30,10 +31,16 @@ public class VerifySignUp extends BaseCLASS {
 		sp.entercompany().sendKeys("google");
 		sp.enterphone().sendKeys("9514862370");
 		
-		Select s = new Select(sp.enteremployee());
+		
+		CommonMethods.handleDropdown(sp.enteremployee(), 1);
+		
+		CommonMethods.handleDropdown(sp.entercountry(), 2);
+		
+		
+		/*Select s = new Select(sp.enteremployee());
 		s.selectByIndex(2);
 		Select a = new Select(sp.entercountry());
-		a.selectByVisibleText("India");
+		a.selectByVisibleText("India");*/
 		
 
 	}

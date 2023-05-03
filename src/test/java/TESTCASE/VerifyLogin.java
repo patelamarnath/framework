@@ -8,6 +8,7 @@ import org.testng.asserts.SoftAssert;
 
 import PageObjectModel.LoginPage;
 import RESOURCES.BaseCLASS;
+import RESOURCES.CommonMethods;
 
 public class VerifyLogin extends BaseCLASS {
 
@@ -44,11 +45,24 @@ public class VerifyLogin extends BaseCLASS {
 		
 		String actualText = LPO.errorText().getText();
 		 
-		String expctedText = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
+		String expctedText = "Please check your username and *password*. If you still can't log in, contact your Salesforce administrator.";
 		
-		SoftAssert assertion = new SoftAssert();
-		assertion.assertEquals(actualText, expctedText, "Error message is not valid");
+		CommonMethods.handleAssertions(actualText, expctedText,"error message is not valid");
 		
-		assertion.assertAll();
+		
+		/*
+		 * SoftAssert assertion = new SoftAssert(); assertion.assertEquals(actualText,
+		 * expctedText, "Error message is not valid");
+		 * 
+		 * assertion.assertAll();
+		 */
+		
+		
+
+	       //String privacyActualText=LPO.privacyText().getText();
+	         
+	       //String privacyExpctedText="Privacy";
+	       
+	      // CommonMethods.handleAssertions(privacyActualText,privacyExpctedText , "privayc text is not showing on screen");
 	}
 }
