@@ -1,6 +1,6 @@
 package RESOURCES;
 
-import java.io.FileInputStream;
+ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -18,7 +18,7 @@ public class BaseCLASS {
 	public void initializeDriver() throws IOException {
 		// This will access the properties file
 		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\AMAR\\eclipse-workspace\\MAVEN\\src\\main\\java\\RESOURCES\\Data.properties");
+				System.getProperty("user.dir")+"\\src\\main\\java\\RESOURCES\\Data.properties");
 
 		// to read the file
 		pro = new Properties();

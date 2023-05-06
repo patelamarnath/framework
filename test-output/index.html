@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TESTCASE.VerifyLogin" class="method navigator-link" hash-for-method="login1">login1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TESTCASE.VerifyLogin" class="method navigator-link" hash-for-method="login1">login1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TESTCASE.VerifySignUp" class="method navigator-link" hash-for-method="signup">signup</a> <!-- method navigator-link -->
@@ -133,9 +124,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TESTCASE.VerifyLogin</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -144,17 +135,10 @@
                   <a name="login1">
                   </a> <!-- login1 -->
                   <span class="method-name">login1</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	error message is not valid expected [Please check your username and password. If you still can&apos;t log in, contact your Salesforce administrator.] but found []
-	at RESOURCES.CommonMethods.handleAssertions(CommonMethods.java:23)
-	at TESTCASE.VerifyLogin.login1(VerifyLogin.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -227,16 +211,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'signup')
 data.setCell(0, 2, 'TESTCASE.VerifySignUp')
-data.setCell(0, 3, 7987);
+data.setCell(0, 3, 8175);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login1')
 data.setCell(1, 2, 'TESTCASE.VerifyLogin')
-data.setCell(1, 3, 724);
+data.setCell(1, 3, 1060);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,28 +253,26 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signup</span>
-                <span class="method-start">9287 ms</span>
+                <span class="method-start">6804 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">17278 ms</span>
+                <span class="method-start">14984 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TESTCASE.VerifyLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">17700 ms</span>
+                <span class="method-start">15378 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login1</span>
-                <span class="method-start">22109 ms</span>
+                <span class="method-start">19582 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">22981 ms</span>
+                <span class="method-start">20644 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
