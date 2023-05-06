@@ -2,7 +2,6 @@ package TESTCASE;
 
 import java.io.IOException;
 
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import PageObjectModel.LoginPage;

@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
-
 import PageObjectModel.LoginPage;
 import RESOURCES.BaseCLASS;
 import RESOURCES.CommonMethods;
@@ -45,7 +43,7 @@ public class VerifyLogin extends BaseCLASS {
 		
 		String actualText = LPO.errorText().getText();
 		 
-		String expctedText = "Please check your username and *password*. If you still can't log in, contact your Salesforce administrator.";
+		String expctedText = "Please check your username and password. If you still can't log in, contact your Salesforce administrator.";
 		
 		CommonMethods.handleAssertions(actualText, expctedText,"error message is not valid");
 		

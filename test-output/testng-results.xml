@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-02T09:38:27 IST" name="Default suite" finished-at="2023-05-02T09:38:33 IST" duration-ms="6853">
+  <suite started-at="2023-05-06T13:58:34 IST" name="Suite" finished-at="2023-05-06T13:58:58 IST" duration-ms="23316">
     <groups>
     </groups>
-    <test started-at="2023-05-02T09:38:27 IST" name="Default test" finished-at="2023-05-02T09:38:33 IST" duration-ms="6853">
+    <test started-at="2023-05-06T13:58:34 IST" name="Test" finished-at="2023-05-06T13:58:58 IST" duration-ms="23316">
       <class name="TESTCASE.VerifyLogin">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TESTCASE.VerifyLogin@708f5957]" started-at="2023-05-02T09:38:27 IST" name="launchBrowser" finished-at="2023-05-02T09:38:32 IST" duration-ms="5549" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TESTCASE.VerifyLogin@3bb9a3ff]" started-at="2023-05-06T13:58:52 IST" name="launchBrowser" finished-at="2023-05-06T13:58:57 IST" duration-ms="4409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="login1()[pri:0, instance:TESTCASE.VerifyLogin@708f5957]" started-at="2023-05-02T09:38:32 IST" name="login1" finished-at="2023-05-02T09:38:33 IST" duration-ms="918" status="FAIL">
+        <test-method signature="login1()[pri:0, instance:TESTCASE.VerifyLogin@3bb9a3ff]" started-at="2023-05-06T13:58:57 IST" name="login1" finished-at="2023-05-06T13:58:57 IST" duration-ms="724" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
-error message is not valid expected [Please check your username and *password*. If you still can't log in, contact your Salesforce administrator.] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]]]>
+error message is not valid expected [Please check your username and password. If you still can't log in, contact your Salesforce administrator.] but found []]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: The following asserts failed:
-error message is not valid expected [Please check your username and *password*. If you still can't log in, contact your Salesforce administrator.] but found [Please check your username and password. If you still can't log in, contact your Salesforce administrator.]
+error message is not valid expected [Please check your username and password. If you still can't log in, contact your Salesforce administrator.] but found []
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
 at RESOURCES.CommonMethods.handleAssertions(CommonMethods.java:23)
-at TESTCASE.VerifyLogin.login1(VerifyLogin.java:50)
+at TESTCASE.VerifyLogin.login1(VerifyLogin.java:48)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +58,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login1 -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TESTCASE.VerifyLogin@708f5957]" started-at="2023-05-02T09:38:33 IST" name="quitBrowser" finished-at="2023-05-02T09:38:33 IST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TESTCASE.VerifyLogin@3bb9a3ff]" started-at="2023-05-06T13:58:57 IST" name="quitBrowser" finished-at="2023-05-06T13:58:58 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
       </class> <!-- TESTCASE.VerifyLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TESTCASE.VerifySignUp">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:TESTCASE.VerifySignUp@7722c3c3]" started-at="2023-05-06T13:58:34 IST" name="launchBrowser" finished-at="2023-05-06T13:58:44 IST" duration-ms="9285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="signup()[pri:0, instance:TESTCASE.VerifySignUp@7722c3c3]" started-at="2023-05-06T13:58:44 IST" name="signup" finished-at="2023-05-06T13:58:52 IST" duration-ms="7987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:TESTCASE.VerifySignUp@7722c3c3]" started-at="2023-05-06T13:58:52 IST" name="quitBrowser" finished-at="2023-05-06T13:58:52 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- TESTCASE.VerifySignUp -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -6,8 +6,8 @@
       <class name="TESTCASE.VerifyLogin">
         <methods>
           <include name="quitBrowser"/>
-          <include name="login"/>
           <include name="launchBrowser"/>
+          <include name="login1"/>
         </methods>
       </class> <!-- TESTCASE.VerifyLogin -->
     </classes>
